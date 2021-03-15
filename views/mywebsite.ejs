@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="web.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="logo">
+            <img src="../images/img1.png">
+        </div>
+        <div class="bar">
+            <ul>
+                <li class="active"><i class="fa fa-home" aria-hidden="true"></i><a href="/">HOME</a></li>
+                <li><a href="/timetable"><i class="fa fa-user"></i>Time Table</a>
+                    <!-- <div class="sub-menu1">
+                        <ul>
+                            <li><a href="#">MISSION</a></li>
+                            <li><a href="#">VISION</a></li>
+                            <li><a href="#">TEAM</a></li>
+                        </ul>
+                    </div> -->
+                </li>
+                <% if(!currentUser) {%>
+                <li><a href="/login"><i class="fa fa-clone" aria-hidden="true"></i>Login</a>
+                </li>
+                <% }else { %>                
+                    <li><a href="/register"><i class="fa fa-home" aria-hidden="true"></i>Register</a></li>
+                    <li><a href="/logout"><i class="fa fa-clone" aria-hidden="true"></i>Logout</a>
+
+                    <% } %>
+
+
+                    <!-- <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>COURSE</a> -->
+                    <!-- <div class="sub-menu3">
+                        <ul>
+                            <li><a href="#">B.TECH</a>
+                                <div class="sub-menu2">
+                                    <ul>
+                                        <li><a href="#">C.S.E</a></li>
+                                        <li><a href="#">E.C.E</a></li>
+                                        <li><a href="#">CIVIL</a></li>
+                                        <li><a href="#">ELECTRICAL</a></li>
+                                        <li><a href="#">MECHANICAL</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">CONTACT US</a>
+                    <div class="sub-menu4">
+                        <ul>
+                            <li><a href="#">MAIL US AT..srgcmzn@gmail.com</a></li>
+                        </ul>
+                    </div> -->
+                </li>
+            </ul>
+        </div>
+        <div class="red">
+            <h1>CHAIRMAN MESSAGE</h1>
+        </div>
+        <div class="chairman">
+            <img src="../images/cc.jpg">
+            <div class="cright">
+                <pre><b>
+     Dr. S C Kulshreshtha
+     Chairman SRGC
+        Dear Student,
+        On behalf of SRGC family I extend a very warm welcome in joining us for structuring your career. 
+        We are conscious of the very changing needs of society and therefore, we impart education and train 
+        our students beyond the prescribed syllabus to make them complete person. Significance of any situation that arises, 
+        know the difference between right and wrong and  gain the ability to contemplate nature. 
+        A number of experts, specialists, professionals and academicians of high repute from renowned institutions and
+        corporate world are invited for interaction with students so as to strengthen their conceptual foundations.
+        My message would be incomplete without complimenting my faculty, staff and students who are working very hard
+        in cohesion towards the vision of global quality standards.
+        I wish you a great success in life.
+
+        Dr. S C Kulshreshtha
+                </b>
+            </pre>
+            </div>
+        </div>
+        <div class="two">
+            <h2>OUR BRIGHT STUDENTS</h2>
+            <img src=./images/bb1.jpg">
+            <img src="./images/bb2.jpg">
+            <img src="./images/bb3.jpg">
+            <img src="./images/bb4.jpg">
+            <img src="./images/bb4.jpg">
+            <img src="./images/bb4.jpg">
+
+            <!-- <img src="bs1.jpg"> -->
+            <h2>GLIMPSE OF FASHION SPLASH</h2>
+            <img src="./images/sp1.jpg">
+            <img src="./images/sp2.jpg">
+            <img src="./images/sp3.jpg_large">
+            <img src="./images/sp4.jpg">
+            <img src="./images/sp4.jpg">
+            <img src="./images/sp4.jpg">
+            
+
+        </div>
+        <div class=rside>
+            <h1>SHRI RAM GROUP OF COLLEGES</h1>
+            <p>Shri Ram Group of Colleges is the leading future of education.
+                It works on <span>TRANSFORMING DREAMS INTO REALITY</span>.With numerous of acadmic
+                and co-curricular activities, it make learing easier and understandable.
+            </p>
+            <img src="./images/sh1.png">
+            <img src="./images/sh2.jpg">
+            <!-- <img src="sh3.jpg"> -->
+            <img src="./images/sh4.jpg">
+            <div class="btn">
+                <input type="button" value="Explore more">
+                <input type="button" value="visit site"></a>
+                <h3>A Virtual Tour....<span>Click on the Video</span></h3>
+                <iframe width="875" height="441" src="https://www.youtube.com/embed/G27GmD897Tc" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+            </div>
+            <a href="/teacher" align="center"><b>GO TO TEACHER PORTAL</b></a>
+        </div>
+        <div class="last">
+            <h1>CONTACT US</h1>
+            <!-- <img src="sp4.jpg"> -->
+
+            <pre><b><h3>
+                <u>Shri Ram Group of Colleges</u>
+
+                Opp.Almaspur Telephone Exchange
+                Circular Road Muzaffarnagar
+                251002, India
+                Tel:-01313291354
+                Fax:-0131-2620890
+                E-Mail- src_mzn@rediffmail.com  
+            </h3> 
+            <!-- <img src="sp4.jpg"> -->
+
+              </b>  
+            </pre>
+        </div>
+    </div>
+</body>
+
+</html>

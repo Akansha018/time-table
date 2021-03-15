@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <link rel="stylesheet" href="timetable.css" type="text/css">
+</head>
+<body>
+    <div class="main">
+         <img src="./images/tt5.jpg">
+        <div class="first">
+            <h1 align="center">TIME TABLE</h1> 
+            
+            
+    <table border="5" cellspacing="0" align="center"> 
+            <tr>
+                <td colspan="9" align="center" height="50" bgcolor="coral">
+                    <h1 align="center">PAWAN KUMAR GOEL <a href="/timetable/edit">Edit</a></h1>
+
+                </td>
+            </tr>
+            <td align="center" height="50" 
+                width="100"><br> 
+                <b>Day/Period</b></br> 
+            </td> 
+            <td align="center" height="50" 
+                width="100"> 
+                <b>I<br>9:30-10:20</b> 
+            </td> 
+            <td align="center" height="50" 
+                width="100"> 
+                <b>II<br>10:20-11:10</b> 
+            </td> 
+            <td align="center" height="50" 
+                width="100"> 
+                <b>III<br>11:10-12:00</b> 
+            </td> 
+            <td align="center" height="50" 
+                width="100"> 
+                <b>12:00-12:40</b> 
+            </td> 
+            <td align="center" height="50" 
+                width="100"> 
+                <b>IV<br>12:40-1:30</b> 
+            </td> 
+            <td align="center" height="50" 
+                width="100"> 
+                <b>V<br>1:30-2:20</b> 
+            </td> 
+            <td align="center" height="50" 
+                width="100"> 
+                <b>VI<br>2:20-3:10</b> 
+            </td> 
+            <td align="center" height="50" 
+                width="100"> 
+                <b>VII<br>3:10-4:00</b> 
+            </td> 
+        </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>Monday</b></td> 
+                <td align="center" height="50"><%= data[0].lecture_1 %> </td> 
+            <td align="center" height="50"><%= data[0].lecture_2 %></td> 
+            <td align="center" height="50"><%= data[0].lecture_3 %></td> 
+            <td rowspan="6" align="center" height="50" bgcolor="#a1b1"> 
+                <h2>B<br>R<br>E<br>A<br>K</h2> 
+            </td> 
+            <td colspan="3" align="center" bgcolor="light brown"
+                height="50"><%= data[0].lecture_4 %> </td> 
+            <td align="center" height="50"><%= data[0].lecture_7 %> </td> 
+        </tr> 
+        <tr bgcolor="#abe2"> 
+            <td align="center" height="50"> 
+                <b>Tuesday</b> 
+            </td> 
+            <td align="center" 
+                height="50"><%= data[1].lecture_1 %> 
+            </td> 
+            <td bgcolor="coral" colspan="2" align="center" height="50"><%= data[1].lecture_2 %></td> 
+            <td align="center" height="50"><%= data[1].lecture_4 %> </td> 
+            <td align="center" height="50"><%= data[1].lecture_5 %> </td> 
+            <td bgcolor="coral" colspan="2" align="center" height="50"><%= data[1].lecture_6 %> </td> 
+        </tr> 
+        <tr BGCOLOR="LIGHTBROWN"> 
+            <td align="center" height="50"> 
+                <b>Wednesday</b> 
+            </td> 
+            <td align="center" height="50"><%= data[2].lecture_1 %> </td> 
+            <td align="center" height="50"><%= data[2].lecture_2 %></td> 
+            <td align="center" height="50"><%= data[2].lecture_3 %></td> 
+            <td align="center" height="50"><%= data[2].lecture_4 %></td> 
+            <td colspan="2" align="center" 
+                height="50"><%= data[2].lecture_5 %>
+            </td> 
+            <td align="center" height="50"><%= data[2].lecture_7 %></td> 
+        </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>Thursday</b> 
+            </td> 
+            <td align="center" height="50"><%= data[3].lecture_1 %></td> 
+            <td align="center" height="50"><%= data[3].lecture_2 %></td> 
+            <td align="center" height="50"><%= data[3].lecture_3 %></td> 
+            <td colspan="3" align="center" bgcolor="coral"
+                height="50"><%= data[3].lecture_4 %>
+            </td> 
+            <td align="center" height="50"><%= data[3].lecture_7 %></td> 
+        </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>Friday</b> 
+            </td> 
+            <td colspan="3" align="center" bgcolor="LIGHTBROWN"
+                height="50"><%= data[4].lecture_1 %> 
+            </td> 
+            <td align="center" height="50"><%= data[4].lecture_4 %></td> 
+            <td align="center" height="50"><%= data[4].lecture_5 %></td> 
+            <td align="center" height="50"><%= data[4].lecture_6 %></td> 
+            <td align="center" height="50"><%= data[4].lecture_7 %></td> 
+        </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>Saturday</b> 
+            </td> 
+            <td align="center" height="50"><%= data[5].lecture_1 %></td> 
+            <td align="center" height="50"><%= data[5].lecture_2 %></td> 
+            <td align="center" height="50"><%= data[5].lecture_3 %></td> 
+            <td colspan="2" align="center" bgcolor="LIGHTBROWN"
+                height="50"><%= data[5].lecture_4 %>
+            </td> 
+            <td colspan="2" align="center" height="50" bgcolor="coral"><%= data[5].lecture_6 %></td> 
+        </tr> 
+    </table> 
+        </div>
+    </div>
+</body>
+</html>
